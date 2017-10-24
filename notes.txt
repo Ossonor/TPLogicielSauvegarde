@@ -1,0 +1,29 @@
+- Installateur (.exe, .deb ou .apk) :
+Guider, automatiser au max
+
+- Logiciel (Windows / Linux ?) :
+Reperer fichiers modifiés dans repertoires surveillés
+Chiffrer les fichiers avec une clé
+Envoyer le crypt au serveur de fichier dans la même arborescence
+Envoyer la clé sur le serveur de clé
+2 fonctions pour les fichiers : 
+-- Aperçu : ouverture du fichier et consultation dans un fichier temporaire
+-- Restauration : dl du fichier en respectant l'arborescence
+
+Code documenté et commenté
+
+Interface graphique pour paramétrage (fréquende save, selection dossiers à sauvegarder)
+Sauvegarde dès qu'un fichier est modifié d'un octet 
+! Ignorer les fichiers temp, cache, buffer
+! Ne prend en charge que les fichiers crées/modifiés depuis l'installation
+Fonctionne en tâche de fond (service / daemon)
+
+- Serveur de fichiers : 
+Soit Google Drive, Dropbox... et API 
+Soit serveur FTP mis en place par nous même
+Fichiers chiffrés
+
+- Serveur de clé :
+Sauvegarder les clés pour chiffrer les fichiers en local
+Machine différente que serveur de fichier
+Clés chiffrées
